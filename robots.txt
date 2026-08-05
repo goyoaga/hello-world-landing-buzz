@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://goyoaga.github.io/hello-world-landing-buzz/sitemap.xml

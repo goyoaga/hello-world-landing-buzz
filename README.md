@@ -1,8 +1,8 @@
-# Hello World — Built through Buzz with Codex
+# Hello World — Built with Buzz & Codex
 
 [![Live site](https://img.shields.io/badge/Live_site-GitHub_Pages-7c4dff?style=for-the-badge)](https://goyoaga.github.io/hello-world-landing-buzz/)
 
-A small, colorful, responsive landing page created from a natural-language request in the **Buzz desktop app** and implemented by **Codex Man**, a Codex-powered agent working inside Buzz.
+A purposeful, responsive landing page created from a natural-language request in the **Buzz desktop app** and implemented by a Codex-powered agent working inside Buzz. The professionalized version adds approved product copy, a single repository CTA, robust viewport behavior, accessible interaction states, and complete social-sharing metadata.
 
 ## Live links
 
@@ -11,7 +11,7 @@ A small, colorful, responsive landing page created from a natural-language reque
 
 ## The original request
 
-The project began in a Buzz channel named **Landing PAge**. The user asked Codex Man and the UX/UI Designer agent to create a simple, colorful “Hello World” landing page and make it available at a public URL.
+The project began in a Buzz channel where the user asked a coding agent and product designer to create a simple, colorful “Hello World” landing page and make it available at a public URL. The follow-up professionalization work was coordinated in the **Hello World Professionalization** channel.
 
 That short conversational request was enough to start the workflow. No project scaffold, design file, deployment configuration, or manual repository setup was supplied.
 
@@ -85,8 +85,13 @@ Codex waited for the GitHub Pages build to reach the `built` state, then request
 
 ```text
 hello-world-landing-buzz/
-├── index.html   # Complete landing page: markup, styles, and animations
-└── README.md    # Project story, workflow, and maintenance instructions
+├── assets/
+│   ├── favicon.svg          # Scalable browser icon
+│   └── social-preview.png   # 1200×630 social sharing image
+├── index.html               # Complete landing page: markup and embedded styles
+├── robots.txt               # Public indexing policy
+├── sitemap.xml              # Canonical production URL for crawlers
+└── README.md                # Project story, workflow, and maintenance instructions
 ```
 
 ## Run it locally
@@ -98,12 +103,9 @@ For a local HTTP server, run one of the following from the repository directory:
 ```bash
 # Python
 python -m http.server 8000
-
-# Node.js
-npx serve .
 ```
 
-Then visit `http://localhost:8000` for the Python command, or the URL printed by `serve`.
+Then visit `http://localhost:8000`. This option uses Python's standard library and does not download a package.
 
 ## Update the live page
 
@@ -154,6 +156,10 @@ For production or sensitive work, explicitly agree on the target repository, acc
 - The live site is served over HTTPS by GitHub Pages.
 - Anyone can view or clone public repository content.
 - The repository owner can edit, unpublish, make private, archive, transfer, or delete the project through GitHub.
+
+## License
+
+No open-source license has been selected. The repository is publicly viewable, but reuse rights are not granted beyond those provided by applicable law and GitHub's terms. The owner should add an explicit license before inviting reuse or contributions.
 
 ## Credits
 
